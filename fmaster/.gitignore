@@ -1,1 +1,3 @@
-generic_gpio/build/
+build/
+build_*/
+sdkconfig.old

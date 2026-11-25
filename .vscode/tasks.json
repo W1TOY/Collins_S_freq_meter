@@ -1,0 +1,47 @@
+{
+    // ESP32 firmware (fmaster) tasks, runnable from the top-level folder.
+    // Ctrl+Shift+B = Build. Others: Terminal > Run Task...
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceFolder:Collins_S_freq_meter}"
+    },
+    "type": "shell",
+    "command": "powershell",
+    "presentation": { "reveal": "always", "panel": "dedicated", "clear": true },
+    "tasks": [
+        {
+            "label": "ESP32: Build",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "idf.ps1", "build"],
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": ["autoDetect", "${workspaceFolder:Collins_S_freq_meter}/fmaster/build"]
+            }
+        },
+        {
+            "label": "ESP32: Flash",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "idf.ps1", "flash"],
+            "problemMatcher": []
+        },
+        {
+            "label": "ESP32: Flash + Monitor",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "idf.ps1", "flash", "monitor"],
+            "problemMatcher": []
+        },
+        {
+            "label": "ESP32: Monitor",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "idf.ps1", "monitor"],
+            "problemMatcher": []
+        },
+        {
+            "label": "ESP32: Menuconfig",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "idf.ps1", "menuconfig"],
+            "problemMatcher": []
+        },
+        {
+            "label": "ESP32: Full Clean",
+            "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "idf.ps1", "fullclean"],
+            "problemMatcher": []
+        }
+    ]
+}

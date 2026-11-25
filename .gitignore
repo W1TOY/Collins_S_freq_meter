@@ -1,0 +1,22 @@
+# ---- ESP-IDF build output ----
+build/
+build_*/
+sdkconfig.old
+managed_components/
+
+# ---- KiCad: backups, caches, per-user state ----
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.lck
+\#auto_saved_files\#
+_autosave-*
+*.kicad_pcb.zip
+
+# ---- Freerouting intermediates (regenerated from the .kicad_pcb) ----
+PCB/**/routing/
+
+# ---- OS / editor ----
+Thumbs.db
+desktop.ini
+.DS_Store

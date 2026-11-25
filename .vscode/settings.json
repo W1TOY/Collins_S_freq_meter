@@ -1,0 +1,18 @@
+{
+    "cmake.sourceDirectory": "Q:/MasterDB/HAM/PCB_CNC/Collins_S_freq_meter",
+    "idf.currentSetup": "C:\\Users\\email\\esp\\v5.4\\esp-idf",
+    "idf.espIdfPathWin": "C:\\Users\\email\\esp\\v5.4\\esp-idf",
+    "idf.toolsPathWin": "C:\\Users\\email\\.espressif",
+    "idf.customExtraVars": {
+        "IDF_TARGET": "esp32"
+    },
+    "idf.openOcdConfigs": [
+        "board/esp32-wrover-kit-3.3v.cfg"
+    ],
+    "idf.flashType": "UART",
+    "idf.portWin": "COM3",
+    // Build output stays inside fmaster/
+    "idf.buildPath": "${workspaceFolder}/fmaster/build",
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.default.compileCommands": "${workspaceFolder}/fmaster/build/compile_commands.json"
+}
